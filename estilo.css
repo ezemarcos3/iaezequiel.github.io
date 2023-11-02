@@ -1,0 +1,347 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #242121;
+}
+
+h2{
+    color: #fff;
+}
+
+h3{
+    color: #fff;
+}
+
+h4{
+    color: #fff;
+}
+
+p{
+    color: #fff;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: #009688;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+  
+/* Header */
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #009688;  
+    background: -webkit-linear-gradient(to right, hsla(197, 63%, 16%, 0.70), hsla(174, 100%, 29%, 0.70)), url('https://media.istockphoto.com/id/1364859722/es/foto/inteligencia-artificial-concepto.jpg?s=612x612&w=0&k=20&c=tA12uPrI6e0zLb_pPhsircZrY2crhJyuUVmJdAxCc_A=');  
+    background: linear-gradient(to right, hsla(197, 63%, 16%, 0.70), hsla(174, 100%, 29%, 0.70)), url('https://media.istockphoto.com/id/1364859722/es/foto/inteligencia-artificial-concepto.jpg?s=612x612&w=0&k=20&c=tA12uPrI6e0zLb_pPhsircZrY2crhJyuUVmJdAxCc_A='); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+
+nav > a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+}
+
+ .division{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+ }
+
+ /* Sobre nosotros */
+
+ .contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .imagen-ia{
+    width: 48%;
+ }
+
+.contenido-textos{
+    width: 48%;
+ }
+
+ .contenido-textos h3{
+    margin-bottom: 15px;
+ }
+
+ .contenido-textos h3 span{
+    background: #009688;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
+    margin-right: 5px;
+ }
+
+ .contenido-textos p{
+    padding: 0 0 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+ }
+
+ /* Galeria */
+
+ .Lugares{
+    background: #f2f2f2;
+ }
+
+ .galeria-lugares{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+
+ .imagen-lugares{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+ }
+
+ .imagen-lugares > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+ }
+
+ .hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(174, 100%, 29%, 0.70);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .hover-galeria img{
+    width: 50px;
+ }
+
+ .hover-galeria p{
+    color: #000000;
+ }
+
+ .imagen-lugares:hover .hover-galeria{
+    transform: scale(1);
+ }
+
+ /* IAs mas usadas */
+
+ .cards{
+    display: flex;
+    justify-content: space-evenly;
+ }
+
+ .cards .card{
+    background: #009688;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
+ }
+
+ .cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+ }
+
+ .cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #fff;
+ }
+
+ .cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+ }
+
+ /* Sobre mi */
+
+ .sobre-mi{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+ }
+
+ .sobre-mi-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .informacion-propia{
+    width: 28%;
+    text-align: center;
+ }
+
+ 
+
+ .informacion-propia h3{
+    margin: 10px 0;
+    color: black;
+ }
+
+ .informacion-propia p{
+    font-weight: 300;
+    text-align: justify;
+    color: black;
+ }
+
+ footer{
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+ }
+
+ .contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    border-bottom: 3px solid #009688;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width: 900px){
+    header{
+        background-position: center;
+    }
+
+    /*IA*/
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+    }
+
+    .contenido-textos{
+        width: 90%;
+    }
+    .imagen-ia{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-lugares{
+        width: 44%;
+    }
+
+    /*Mas usadas */
+
+    .cards{
+        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /*Sobre mi */
+
+    .sobre-mi-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .informacion-propia{
+        width: 100%;
+        text-align: center;
+    }
+
+    .informacion-propia:nth-child(1), .informacion-propia:nth-child(2){
+        margin-bottom: 60px;
+    }
+}
